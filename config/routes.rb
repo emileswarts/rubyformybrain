@@ -1,5 +1,9 @@
 Rubyformybrain::Application.routes.draw do
+
+	root to: "information#index"
+
   resources :information
+
 
 
   # The priority is based upon order of creation:

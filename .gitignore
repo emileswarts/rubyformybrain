@@ -16,4 +16,4 @@
 /tmp
 bundler_stubs/
 /public/system/
-/config/database.yml
+/config/api_config.yml
