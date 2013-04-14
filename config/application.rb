@@ -9,7 +9,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-CONFIG = YAML::load(File.read(File.expand_path('../config/api_config.yml', __FILE__)))
+CONFIG = YAML::load(File.read(File.expand_path('../api_config.yml', __FILE__)))
 CONFIG.merge! CONFIG.fetch(Rails.env, {})
 CONFIG.symbolize_keys!
 
