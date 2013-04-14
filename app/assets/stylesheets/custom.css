@@ -1,0 +1,8 @@
+.footer {
+		clear:both;
+		background:#111;
+		position:relative;
+		margin-top: 150px; /* negative value of footer height */
+		height: 150px;
+		padding-top:20px;
+}
