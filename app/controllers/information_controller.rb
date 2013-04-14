@@ -1,9 +1,10 @@
 class InformationController < ApplicationController
-		http_basic_authenticate_with name: CONFIG[:name], :password => CONFIG[:password], except: [:index]
+
+		http_basic_authenticate_with name: CONFIG[:name], :password => CONFIG[:password], except: :index
   # GET /information
   # GET /information.json
   def index
-    @information = Information.all
+    @information = Information.order('created_at')
 
     respond_to do |format|
       format.html # index.html.erb
