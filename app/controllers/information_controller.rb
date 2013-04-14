@@ -1,5 +1,5 @@
 class InformationController < ApplicationController
-		http_basic_authenticate_with name: CONFIG[:name], :password => CONFIG[:password], only: [:edit, :new, :destroy, :update]
+		http_basic_authenticate_with name: CONFIG[:name], :password => CONFIG[:password], except: [:index]
   # GET /information
   # GET /information.json
   def index
