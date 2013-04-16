@@ -27,6 +27,10 @@ end
 
 gem 'jquery-rails'
 
+group :production do
+	gem 'newrelic_rpm'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -41,3 +45,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+#
+# NewRelic for idle instances
