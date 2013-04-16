@@ -4,7 +4,7 @@ class InformationController < ApplicationController
   # GET /information
   # GET /information.json
   def index
-    @information = Information.order('created_at')
+    @information = Information.order("created_at desc")
 
     respond_to do |format|
       format.html # index.html.erb

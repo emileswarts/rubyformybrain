@@ -8,12 +8,12 @@
 	<% current_date = information.created_at.strftime('%d %b %y') %>
 
 	<% if used_currentdate != current_date %>
-		<h1 style='color:#cfcfcf'><%= current_date %></h1>
+		<h1 style='color:#888'><%= current_date %></h1>
 	<% end %>
 
 	<% used_currentdate = current_date %>
 
-	<li style='list-style:none'><h4><span style='font-size:0.7em;color:#bababa'><%= information.created_at.hour %>:<%= information.created_at.to_s.to_time.strftime('%M') %></span> <%= information.nugget %></h4></li>
+	<li style='list-style:none'><h4><span style='font-size:0.7em;color:#888'><%= information.created_at.hour %>:<%= information.created_at.to_s.to_time.strftime('%M') %></span> <%= information.nugget %></h4></li>
  
 <% end %>
 </ul>
