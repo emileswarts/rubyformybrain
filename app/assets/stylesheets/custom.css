@@ -6,3 +6,18 @@
 		height: 150px;
 		padding-top:20px;
 }
+.information_list {
+
+}
+.information_list h1 {
+	color:#888;
+
+}
+.information_list li {
+	list-style-type: none !important;
+
+}
+.information_list li span {
+	font-size:0.7em !important;
+	color:#888 !important;
+}

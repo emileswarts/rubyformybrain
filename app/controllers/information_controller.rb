@@ -1,6 +1,7 @@
 class InformationController < ApplicationController
 
-		http_basic_authenticate_with name: CONFIG[:name], :password => CONFIG[:password], except: :index
+  http_basic_authenticate_with name: CONFIG[:name], :password => CONFIG[:password], except: :index
+
   def index
     @information = Information.order("created_at desc")
 
