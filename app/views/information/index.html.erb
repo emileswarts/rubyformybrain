@@ -5,7 +5,7 @@
 
 	<% t = Time.now %>
 
-	<% current_date = t.strftime('%d %b %y') %>
+	<% current_date = information.created_at.strftime('%d %b %y') %>
 
 	<% if used_currentdate != current_date %>
 		<h1 style='color:#cfcfcf'><%= current_date %></h1>
@@ -13,7 +13,7 @@
 
 	<% used_currentdate = current_date %>
 
-	<li style='list-style:none'><h2><span style='font-size:0.7em;color:#bababa'><%= information.created_at.hour %>:<%= information.created_at.to_s.to_time.strftime('%M') %></span> <%= information.nugget %></h2></li>
+	<li style='list-style:none'><h4><span style='font-size:0.7em;color:#bababa'><%= information.created_at.hour %>:<%= information.created_at.to_s.to_time.strftime('%M') %></span> <%= information.nugget %></h4></li>
  
 <% end %>
 </ul>
