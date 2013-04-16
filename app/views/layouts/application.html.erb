@@ -15,7 +15,7 @@
 										<%= yield %>
 								</div>
 								<div class='span3' style='margin-top:30px'>
-										<%= image_tag "/assets/ruby.png" %>
+										<%= link_to (image_tag "/assets/ruby.png", root_path) %>
 										<% todays_date = Date.today %>
 										<% d_date = Date.parse('10/06/2013') %>
 										<% difference = d_date - todays_date %>
